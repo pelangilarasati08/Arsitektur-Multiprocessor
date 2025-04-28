@@ -31,13 +31,13 @@ Jaringan Data dan Jaringan Perintah:
 ## Penjelasan gambar:
 Ada satu CPU Master ➔ Dialah bos yang memberikan instruksi ke CPU lainnya (Slave).
 
-## CPU Master:
+ CPU Master:
 
 ➔ Ngatur komunikasi ke semua CPU Slave.
 
 ➔ Langsung berhubungan ke Memory Controller.
 
-## CPU Slave:
+ CPU Slave:
 
 ➔ menunggu perintah dari CPU Master.
 
@@ -45,7 +45,7 @@ Ada satu CPU Master ➔ Dialah bos yang memberikan instruksi ke CPU lainnya (Sla
 
 Semua CPU (baik Master maupun Slave) terhubung ke Memory Controller untuk ambil atau simpan data.
 
-## Memory Controller ngatur akses ke:
+ Memory Controller ngatur akses ke:
 
 ➔ RAM (Memory Utama).
 
