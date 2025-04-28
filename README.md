@@ -5,10 +5,10 @@
 ## Arsitektur Multiprocessor ASIMETRIS
 ![image](https://github.com/user-attachments/assets/403b6f12-a411-4155-bf1c-6a6ccf1c00a7)
 
-1. Arsitektur Multiprosesor Simetris (SMP)
+## 1. Arsitektur Multiprosesor Simetris (SMP)
 Konsep utamanya: Semua prosesor punya peran yang sama, tidak ada yang lebih tinggi atau lebih rendah.
 
-Penjelasan gambar:
+## Penjelasan gambar:
 Ada beberapa prosesor (Processor 1, 2, 3, 4) ➔ Semua prosesor ini bisa mengakses memori utama dan jaringan dengan kekuatan yang sama.
 
 Masing-masing prosesor punya cache sendiri ➔ Cache ini tempat data sementara supaya proses lebih cepat, tanpa harus bolak-balik ke RAM.
@@ -25,27 +25,27 @@ Jaringan Data dan Jaringan Perintah:
 ➔ Jaringan data buat transfer file besar.
 ➔ Jaringan perintah buat kirim instruksi kecil.
 
-2. Arsitektur Multiprosesor Asimetris (AMP)
-Konsep utamanya: Ada satu CPU Master yang mengatur semua CPU lain (CPU Slave).
+## 2. Arsitektur Multiprosesor Asimetris (AMP)
+ Konsep utamanya: Ada satu CPU Master yang mengatur semua CPU lain (CPU Slave).
 
-Penjelasan gambar:
-Ada satu CPU Master ➔ Dialah bos yang kasih instruksi ke CPU lainnya (Slave).
+## Penjelasan gambar:
+Ada satu CPU Master ➔ Dialah bos yang memberikan instruksi ke CPU lainnya (Slave).
 
-CPU Master:
+## CPU Master:
 
 ➔ Ngatur komunikasi ke semua CPU Slave.
 
 ➔ Langsung berhubungan ke Memory Controller.
 
-CPU Slave:
+## CPU Slave:
 
-➔ Nunggu perintah dari CPU Master.
+➔ menunggu perintah dari CPU Master.
 
-➔ Gak bisa ambil keputusan sendiri.
+➔ tidak bisa ambil keputusan sendiri.
 
 Semua CPU (baik Master maupun Slave) terhubung ke Memory Controller untuk ambil atau simpan data.
 
-Memory Controller ngatur akses ke:
+## Memory Controller ngatur akses ke:
 
 ➔ RAM (Memory Utama).
 
